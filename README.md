@@ -10,7 +10,7 @@ MySql
 
 Pasoss para ejecucion de la API.
 
-# 1 clonar repo
+# 1 Clonar repo
 
 git clone https://github.com/hhidalgo90/unicomer.git
 
@@ -22,6 +22,13 @@ Ejecutar : mvn package
 # 3 Ejecutar proyecto
 
 cd /target
-java -jar nombre-jar.jar
+java -jar tienda-0.0.1-SNAPSHOT.jar
 
 El proyecto se ejecuta en el browser: localhost:8081/tienda
+
+# IMPORTANTE
+
+La app esta configurada para correr en el perfil "local", utilizando la base de datos H2, en caso de querer usar mySql 
+ejecuctar el siguiente comando en el paso 3:
+
+java -jar tienda-0.0.1-SNAPSHOT.jar --spring.profiles.active=default
