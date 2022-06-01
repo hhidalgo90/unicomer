@@ -21,14 +21,14 @@ Ejecutar : mvn package
 
 # 3 Ejecutar proyecto
 
-cd /target
-java -jar tienda-0.0.1-SNAPSHOT.jar
+1. cd /target
+2. java -jar tienda-0.0.1-SNAPSHOT.jar
 
 El proyecto se ejecuta en el browser: localhost:8081/tienda
 
 # IMPORTANTE
 
 La app esta configurada para correr en el perfil "local", utilizando la base de datos H2, en caso de querer usar mySql 
-ejecuctar el siguiente comando en el paso 3:
+ejecuctar el siguiente comando en el paso 3 (Debe estar disponible una instancia MySql):
 
-java -jar tienda-0.0.1-SNAPSHOT.jar --spring.profiles.active=default
+java -jar tienda-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
